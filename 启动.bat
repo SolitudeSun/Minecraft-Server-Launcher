@@ -1,95 +1,61 @@
-::[Bat To Exe Converter]
-::
-::fBE1pAF6MU+EWH3eyE85Jh5XXgWEKFc8+liZAil+FiK7J73S0Qj3eo7P5jFg32blDcE/o6oe02hMndlMLxRVbh2lawEgug4=
-::YAwzoRdxOk+EWAjk
-::fBw5plQjdCuDJFSN+kczOhpSWDgEwIY/7HSZESDHahpIJ6fVVuMrRAcGFjJj4mXqInlhjkirFp1mHQ/Licu39s9lIAY3pg4=
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRnk
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSjk=
-::cBs/ulQjdF25
-::ZR41oxFsdFKZSTk=
-::eBoioBt6dFKZSTk=
-::cRo6pxp7LAbNWATEpSI=
-::egkzugNsPRvcWATEpSI=
-::dAsiuh18IRvcCxnZtBJQ
-::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJlZkoaHErWXA==
-::ZQ05rAF9IBncCkqN+0xwdVtCGUrTcj/a
-::ZQ05rAF9IAHYFVzEqQIdIRVRTxaDOn/6NbAO/u3pr8aGt0MeXOctGA==
-::eg0/rx1wNQPfEVWB+kM9LVsJDCmLMm65FLQa/KjI6viRp19deOMqdozT36bAJfgWig==
-::fBEirQZwNQPfEVWB+kM9LVsJDCmLMm65FLQa/KjI6viRp19deOMqdozT36bAJfgWig==
-::cRolqwZ3JBvQF1fEqQIdIRVRTxaDOn/6gEnxbQI6ahNPJ73S0Qj3/XYTug==
-::dhA7uBVwLU+EWHSL/kM+L3s=
-::YQ03rBFzNR3SWATE2Us+LRhGTQKWXA==
-::dhAmsQZ3MwfNWATE100gMQldSwyWfMlzRpIT5Oz+4dWgrUkOQex/Kt+JivnccLJCpAXFeZpt5HNdkN8fTCldbRe5eAow5w4=
-::ZQ0/vhVqMQ3MEVWAtB9wDxRYSAGMA0y1AqYJ5og=
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRmp/Uw1KwlVShDCupdXg1/dbREzahpIJ6fV0Rv3OMdeMmIK/RxJzUrocZMj6V1VnNgZAlI4
-::Zh4grVQjdCuDJFSN+kczOhpSWDgEwIY/7HSZESDHahpIJ6fVVuMrRAoVNjJm0GXgC3lhhVmoPLIajp5CXVUMMBeza28=
-::YB416Ek+Zm8=
-::
-::
-::978f952a14a936cc963da21a135fa983
 @echo off
 set ReTimes=0
 :start
-title ÕýÔÚÆô¶¯·þÎñÆ÷...
-@echo                             ·þÎñÆ÷Æô¶¯Èí¼þv5.1.4
-@echo                               Golden_GodsunÖÆ×÷
+title æ­£åœ¨å¯åŠ¨æœåŠ¡å™¨...
+@echo                             æœåŠ¡å™¨å¯åŠ¨è½¯ä»¶v5.1.4
+@echo                               Golden_Godsunåˆ¶ä½œ
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo                                   ÃâÔðÉùÃ÷£º
-@echo                     ÓÃ»§ÈôÒòÊ¹ÓÃ±¾Èí¼þ¶øµ¼ÖÂµÄÈÎºÎÖÇÁ¦ÎÊÌâ
-@echo                     ¼°ºó¹û¾ùÓÉ×Ô¼º¸ºÔð£¬±¾Èí¼þ²»¸ºÈÎºÎÔðÈÎ
-@echo                     Ê¹ÓÃ±¾Èí¼þ¼´´ú±íÓÃ»§ÒÑÖªÏþÒÔÉÏÄÚÈÝ£¡£¡
+@echo                                   å…è´£å£°æ˜Žï¼š
+@echo                     ç”¨æˆ·è‹¥å› ä½¿ç”¨æœ¬è½¯ä»¶è€Œå¯¼è‡´çš„ä»»ä½•æ™ºåŠ›é—®é¢˜
+@echo                     åŠåŽæžœå‡ç”±è‡ªå·±è´Ÿè´£ï¼Œæœ¬è½¯ä»¶ä¸è´Ÿä»»ä½•è´£ä»»
+@echo                     ä½¿ç”¨æœ¬è½¯ä»¶å³ä»£è¡¨ç”¨æˆ·å·²çŸ¥æ™“ä»¥ä¸Šå†…å®¹ï¼ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo                                ÕýÔÚÆô¶¯·þÎñÆ÷
-@echo                                  ÇëÄÍÐÄµÈ´ý£¡
+@echo                                æ­£åœ¨å¯åŠ¨æœåŠ¡å™¨
+@echo                                  è¯·è€å¿ƒç­‰å¾…ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
-if not exist "%~dp0ÉèÖÃ.ini" (goto :1)
-for /f "tokens=1,* delims==" %%a in ('findstr "Èí¼þ°æ±¾=" "ÉèÖÃ.ini"') do (set Version=%%~b)
+if not exist "%~dp0è®¾ç½®.ini" (goto :1)
+for /f "tokens=1,* delims==" %%a in ('findstr "è½¯ä»¶ç‰ˆæœ¬=" "è®¾ç½®.ini"') do (set Version=%%~b)
 if not "%Version%"=="v5.1.4" (goto :2)
 if not exist "%~dp0*.jar" (goto :4)
-for /f "tokens=1,* delims==" %%a in ('findstr "¼ì²â¶Ë¿ÚºÅ=" "ÉèÖÃ.ini"') do (set AutoPort=%%~b)
-if not "%AutoPort%"=="¿ª" (if not "%AutoPort%"=="¹Ø" (goto :3))
-if "%AutoPort%"=="¹Ø" (goto :noport)
+for /f "tokens=1,* delims==" %%a in ('findstr "æ£€æµ‹ç«¯å£å·=" "è®¾ç½®.ini"') do (set AutoPort=%%~b)
+if not "%AutoPort%"=="å¼€" (if not "%AutoPort%"=="å…³" (goto :3))
+if "%AutoPort%"=="å…³" (goto :noport)
 if exist "%~dp0server.properties" (for /f "tokens=1,* delims==" %%a in ('findstr "server-port=" "server.properties"') do (set Port=%%b)) else (set Port=25565)
 :noport
-for /f "tokens=1,* delims==" %%a in ('findstr "×Ô¶¯ÖØÆô=" "ÉèÖÃ.ini"') do (set AutoRestart=%%~b)
-if not "%AutoRestart%"=="¿ª" (if not "%AutoRestart%"=="¹Ø" (goto :3))
-if "%AutoRestart%"=="¹Ø" (goto :norestart)
-for /f "tokens=1,* delims==" %%a in ('findstr "ÖØÆôÊ±¼ä=" "ÉèÖÃ.ini"') do (set ReSeconds=%%~b)
-for /f "tokens=1,* delims==" %%a in ('findstr "ÖØÆô´ÎÊý=" "ÉèÖÃ.ini"') do (set ReLimits=%%~b)
-for /f "tokens=1,* delims==" %%a in ('findstr "×Ô¶¯±¸·Ý=" "ÉèÖÃ.ini"') do (set AutoBackup=%%~b)
-if not "%AutoBackup%"=="¿ª" (if not "%AutoBackup%"=="¹Ø" (goto :3))
-if "%AutoBackup%"=="¹Ø" (goto :norestart)
-for /f "tokens=1,* delims==" %%a in ('findstr "±¸·ÝÂ·¾¶=" "ÉèÖÃ.ini"') do (set BackupWay=%%~b)
-for /f "tokens=1,* delims==" %%a in ('findstr "±¸·ÝÃû³Æ=" "ÉèÖÃ.ini"') do (set BackupName=%%~b)
+for /f "tokens=1,* delims==" %%a in ('findstr "è‡ªåŠ¨é‡å¯=" "è®¾ç½®.ini"') do (set AutoRestart=%%~b)
+if not "%AutoRestart%"=="å¼€" (if not "%AutoRestart%"=="å…³" (goto :3))
+if "%AutoRestart%"=="å…³" (goto :norestart)
+for /f "tokens=1,* delims==" %%a in ('findstr "é‡å¯æ—¶é—´=" "è®¾ç½®.ini"') do (set ReSeconds=%%~b)
+for /f "tokens=1,* delims==" %%a in ('findstr "é‡å¯æ¬¡æ•°=" "è®¾ç½®.ini"') do (set ReLimits=%%~b)
+for /f "tokens=1,* delims==" %%a in ('findstr "è‡ªåŠ¨å¤‡ä»½=" "è®¾ç½®.ini"') do (set AutoBackup=%%~b)
+if not "%AutoBackup%"=="å¼€" (if not "%AutoBackup%"=="å…³" (goto :3))
+if "%AutoBackup%"=="å…³" (goto :norestart)
+for /f "tokens=1,* delims==" %%a in ('findstr "å¤‡ä»½è·¯å¾„=" "è®¾ç½®.ini"') do (set BackupWay=%%~b)
+for /f "tokens=1,* delims==" %%a in ('findstr "å¤‡ä»½åç§°=" "è®¾ç½®.ini"') do (set BackupName=%%~b)
 if "%BackupWay%"=="" (goto :8)
 :norestart
-for /f "tokens=1,* delims==" %%a in ('findstr "×Ô¶¯¼ì²âJava=" "ÉèÖÃ.ini"') do (set AutoJava=%%~b)
-if not "%AutoJava%"=="¿ª" (if not "%AutoJava%"=="¹Ø" (goto :3))
-if "%AutoJava%"=="¿ª" (goto :havejava)
-for /f "tokens=1,* delims==" %%a in ('findstr "JavaÂ·¾¶=" "ÉèÖÃ.ini"') do (set Java=%%~b)
+for /f "tokens=1,* delims==" %%a in ('findstr "è‡ªåŠ¨æ£€æµ‹Java=" "è®¾ç½®.ini"') do (set AutoJava=%%~b)
+if not "%AutoJava%"=="å¼€" (if not "%AutoJava%"=="å…³" (goto :3))
+if "%AutoJava%"=="å¼€" (goto :havejava)
+for /f "tokens=1,* delims==" %%a in ('findstr "Javaè·¯å¾„=" "è®¾ç½®.ini"') do (set Java=%%~b)
 if not exist "%Java%" (goto :6)
 :havejava
-for /f "tokens=1,* delims==" %%a in ('findstr "×Ô¶¯¼ì²âºËÐÄ=" "ÉèÖÃ.ini"') do (set AutoCore=%%~b)
-if not "%AutoCore%"=="¿ª" (if not "%AutoCore%"=="¹Ø" (goto :3))
-if "%AutoCore%"=="¿ª" (goto :havecore)
-for /f "tokens=1,* delims==" %%a in ('findstr "ºËÐÄÃû³Æ=" "ÉèÖÃ.ini"') do (set Core=%%~b)
+for /f "tokens=1,* delims==" %%a in ('findstr "è‡ªåŠ¨æ£€æµ‹æ ¸å¿ƒ=" "è®¾ç½®.ini"') do (set AutoCore=%%~b)
+if not "%AutoCore%"=="å¼€" (if not "%AutoCore%"=="å…³" (goto :3))
+if "%AutoCore%"=="å¼€" (goto :havecore)
+for /f "tokens=1,* delims==" %%a in ('findstr "æ ¸å¿ƒåç§°=" "è®¾ç½®.ini"') do (set Core=%%~b)
 if not exist "%~dp0%Core%" (goto :5)
 :havecore
 for /f %%a in ('dir /b *.jar') do (set Core=%%a)
-for /f "tokens=1,* delims==" %%a in ('findstr "¶îÍâJVM=" "ÉèÖÃ.ini"') do (set JVM=%%~b)
-for /f "tokens=1,* delims==" %%a in ('findstr "±êÌâ=" "ÉèÖÃ.ini"') do (set Title=%%~b)
-for /f "tokens=1,* delims==" %%a in ('findstr "×î´óÄÚ´æ=" "ÉèÖÃ.ini"') do (set MaxRAM=%%~b)
-for /f "tokens=1,* delims==" %%a in ('findstr "×îÐ¡ÄÚ´æ=" "ÉèÖÃ.ini"') do (set MinRAM=%%~b)
-if "%AutoRestart%"=="¿ª" (if "%AutoPort%"=="¿ª" (title [%Title%]--ÖØÆô[%ReTimes%]´Î--¶Ë¿Ú=[%Port%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.1.4) else (title [%Title%]--ÖØÆô[%ReTimes%]´Î--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.1.4)) else (if "%AutoPort%"=="¿ª" (title [%Title%]--¶Ë¿Ú=[%Port%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.1.4) else (title [%Title%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.1.4))
+for /f "tokens=1,* delims==" %%a in ('findstr "é¢å¤–JVM=" "è®¾ç½®.ini"') do (set JVM=%%~b)
+for /f "tokens=1,* delims==" %%a in ('findstr "æ ‡é¢˜=" "è®¾ç½®.ini"') do (set Title=%%~b)
+for /f "tokens=1,* delims==" %%a in ('findstr "æœ€å¤§å†…å­˜=" "è®¾ç½®.ini"') do (set MaxRAM=%%~b)
+for /f "tokens=1,* delims==" %%a in ('findstr "æœ€å°å†…å­˜=" "è®¾ç½®.ini"') do (set MinRAM=%%~b)
+if "%AutoRestart%"=="å¼€" (if "%AutoPort%"=="å¼€" (title [%Title%]--é‡å¯[%ReTimes%]æ¬¡--ç«¯å£=[%Port%]--å†…å­˜=[%MinRAM%/%MaxRAM%]--Golden_Godsunåˆ¶ä½œv5.1.4) else (title [%Title%]--é‡å¯[%ReTimes%]æ¬¡--å†…å­˜=[%MinRAM%/%MaxRAM%]--Golden_Godsunåˆ¶ä½œv5.1.4)) else (if "%AutoPort%"=="å¼€" (title [%Title%]--ç«¯å£=[%Port%]--å†…å­˜=[%MinRAM%/%MaxRAM%]--Golden_Godsunåˆ¶ä½œv5.1.4) else (title [%Title%]--å†…å­˜=[%MinRAM%/%MaxRAM%]--Golden_Godsunåˆ¶ä½œv5.1.4))
 if exist "%~dp0eula.txt" (goto :haveeula)
 if exist "%~dp0modules.yml" (goto :haveeula)
 echo #This End User License Agreement has been automatically written and agreed to using the startup software!>>eula.txt
@@ -97,172 +63,172 @@ echo (https://account.mojang.com/documents/minecraft_eula).>>eula.txt
 echo #Golden_Godsun production, software version v5.1.4>>eula.txt
 echo eula=true>>eula.txt
 @echo.
-@echo                   Î´¼ì²âµ½"eula.txt"ÎÄ¼þ£¬ÒÑ×Ô¶¯Ð´Èë²¢Í¬Òâ£¡
+@echo                   æœªæ£€æµ‹åˆ°"eula.txt"æ–‡ä»¶ï¼Œå·²è‡ªåŠ¨å†™å…¥å¹¶åŒæ„ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 :haveeula
-if "%AutoJava%"=="¹Ø" (goto :noserverjava)
+if "%AutoJava%"=="å…³" (goto :noserverjava)
 if exist "%~dp0modules.yml" (goto :bungee)
 java %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar %Core% nogui
-if "%AutoBackup%"=="¿ª" (goto :Backup) else (goto :stop)
+if "%AutoBackup%"=="å¼€" (goto :Backup) else (goto :stop)
 :bungee
 java %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -jar %Core% nogui
-if "%AutoBackup%"=="¿ª" (goto :Backup) else (goto :stop)
+if "%AutoBackup%"=="å¼€" (goto :Backup) else (goto :stop)
 :noserverjava
 if exist "%~dp0modules.yml" (goto :javabungee)
 "%Java%" %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar %Core% nogui
-if "%AutoBackup%"=="¿ª" (goto :Backup) else (goto :stop)
+if "%AutoBackup%"=="å¼€" (goto :Backup) else (goto :stop)
 :javabungee
 "%Java%" %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -jar %Core% nogui
-if "%AutoBackup%"=="¿ª" (goto :Backup) else (goto :stop)
+if "%AutoBackup%"=="å¼€" (goto :Backup) else (goto :stop)
 :stop
 set /A ReTimes=%ReTimes%+1
-if "%AutoRestart%"=="¹Ø" (goto :end)
+if "%AutoRestart%"=="å…³" (goto :end)
 if "%ReTimes%"=="%ReLimits%" (goto :7)
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo                             ·þÎñÆ÷½«ÔÚ%ReSeconds%ÃëºóÖØÆô
+@echo                             æœåŠ¡å™¨å°†åœ¨%ReSeconds%ç§’åŽé‡å¯
 @echo.
 @echo -----------------------------------------------------------------------------------
 timeout -t %ReSeconds% >nul
 goto :start
 :Backup
-title ·þÎñÆ÷±¸·ÝÖÐ...
+title æœåŠ¡å™¨å¤‡ä»½ä¸­...
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo                              ·þÎñÆ÷ÕýÔÚ½øÐÐ±¸·Ý
+@echo                              æœåŠ¡å™¨æ­£åœ¨è¿›è¡Œå¤‡ä»½
 @echo.
 @echo -----------------------------------------------------------------------------------
 "%AppData%\Server Components\7-Zip\7z.exe" u -t7z "%BackupWay%\%BackupName%.7z" "%~dp0*" -r -mf -mmt -mx=9 -mhc -mhcf -ms=200m -m0=BCJ -m1=LZMA:a=2:d=25:fb=64
-title ·þÎñÆ÷±¸·ÝÒÑÍê³É£¬ÕýÔÚÖØÆô...
+title æœåŠ¡å™¨å¤‡ä»½å·²å®Œæˆï¼Œæ­£åœ¨é‡å¯...
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo                          ·þÎñÆ÷±¸·ÝÒÑÍê³É£¬ÕýÔÚÖØÆô...
+@echo                          æœåŠ¡å™¨å¤‡ä»½å·²å®Œæˆï¼Œæ­£åœ¨é‡å¯...
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
 goto :stop
 :config
-echo #·þÎñÆ÷Èí¼þµÄ±êÌâÃû³Æ>>ÉèÖÃ.ini
-echo #¼ì²â·þÎñÆ÷¶Ë¿ÚºÅ²¢ÏÔÊ¾ÔÚ±êÌâÉÏ£¬ÊäÈë£¨¿ª»ò¹Ø£©>>ÉèÖÃ.ini
-echo ±êÌâ="·þÎñÆ÷">>ÉèÖÃ.ini
-echo ¼ì²â¶Ë¿ÚºÅ="¿ª">>ÉèÖÃ.ini
-echo.>>ÉèÖÃ.ini
-echo #ÊÇ·ñÖ¸¶¨Ê¹ÓÃÄ³¸öÂ·¾¶µÄJava>>ÉèÖÃ.ini
-echo #ÊÊÓÃÓÚ²»Í¬°æ±¾µÄ·þÎñÆ÷ÓÃ²»Í¬°æ±¾µÄJava£¬Èç¹ûÏëÇÐ»»Ä£Ê½£¬ÇëÊäÈë£¨¿ª»ò¹Ø£©£¨¿ªÆôÊ±ÎÞÊÓJavaÎ»ÖÃ£©>>ÉèÖÃ.ini
-echo #Èç¹û¹Ø±Õ×Ô¶¯¼ì²âJava£¬ÇëÊÖ¶¯ÊäÈëJavaÂ·¾¶£¨ÀýÈç: "C:\Program Files\Zulu\zulu-8\bin\java.exe"£©>>ÉèÖÃ.ini
-echo #ÊÇ·ñÌí¼ÓÆô¶¯µÄ¶îÍâJVM²ÎÊý£¨ÀýÈç: "-Dusing.aikars.flags=https://mcflags.emc.gs"£©>>ÉèÖÃ.ini
-echo #±¾Èí¼þÒÑ²¿·ÖÊ¹ÓÃaikarµÄ½Å±¾²ÎÊý£¬ÇëÎðÖØ¸´Ìí¼Ó£¨²»¶®ÇëÁô¿Õ£©>>ÉèÖÃ.ini
-echo ×Ô¶¯¼ì²âJava="¿ª">>ÉèÖÃ.ini
-echo JavaÂ·¾¶="">>ÉèÖÃ.ini
-echo ¶îÍâJVM="">>ÉèÖÃ.ini
-echo.>>ÉèÖÃ.ini
-echo #×î´óÄÚ´æ¼°×îÐ¡ÄÚ´æ£¨ÇëÌîÐ´µ¥Î»M»òG£©>>ÉèÖÃ.ini
-echo ×î´óÄÚ´æ="2G">>ÉèÖÃ.ini
-echo ×îÐ¡ÄÚ´æ="2G">>ÉèÖÃ.ini
-echo.>>ÉèÖÃ.ini
-echo #·þÎñÆ÷ºËÐÄ×Ô¶¯¼ì²â¼°ÊÖ¶¯ÊäÈë>>ÉèÖÃ.ini
-echo #ÊÇ·ñ×Ô¶¯Ê¶±ðºËÐÄ£¬Èç¹ûÏëÇÐ»»Ä£Ê½£¬ÇëÊäÈë£¨¿ª»ò¹Ø£©£¨¿ªÆôÊ±ÎÞÊÓºËÐÄÃû³Æ£©>>ÉèÖÃ.ini
-echo #¼ì²âºËÐÄ½öÏÞÓÚµ±Ç°Â·¾¶Ö»ÓÐÒ»¸öjarÎÄ¼þ£¬·ñÔò¿ÉÄÜ³ö´í£¡£¨ºËÐÄÃû³Æ²»ÄÜ´ø¿Õ¸ñ£©>>ÉèÖÃ.ini
-echo #Èç¹û¹Ø±Õ×Ô¶¯¼ì²â£¬ÇëÊÖ¶¯ÊäÈëºËÐÄÃû³Æ£¨ÀýÈç: Server.jar£©>>ÉèÖÃ.ini
-echo ×Ô¶¯¼ì²âºËÐÄ="¿ª">>ÉèÖÃ.ini
-echo ºËÐÄÃû³Æ="">>ÉèÖÃ.ini
-echo.>>ÉèÖÃ.ini
-echo #·þÎñÆ÷ÖØÆôÄ£Ê½¼°Ê±¼ä´ÎÊý>>ÉèÖÃ.ini
-echo #·þÎñÆ÷¹Ø±ÕºóÊÇ·ñÖØÆô£¬Èç¹ûÏëÇÐ»»Ä£Ê½£¬ÇëÊäÈë£¨¿ª»ò¹Ø£©£¨¹Ø±ÕÊ±ÎÞÊÓºóÁ½¸ö²ÎÊý£¬²¢¹Ø±Õ×Ô¶¯±¸·Ý£©>>ÉèÖÃ.ini
-echo #Èç¹ûÏëÑÓ³ÙÖØÆôÊ±¼ä£¬ÄÇÃ´ÇëÌîÐ´Êý×Ö£¨µ¥Î»: Ãë£©>>ÉèÖÃ.ini
-echo #ÖØÆô´ÎÊý¹ËÃûË¼ÒåÖØÆô¼¸´Î£¬Èç¹ûÏë¹Ø±Õ£¬ÔÚÖØÆô´ÎÊýÌîÐ´0¼´¿É>>ÉèÖÃ.ini
-echo ×Ô¶¯ÖØÆô="¿ª">>ÉèÖÃ.ini
-echo ÖØÆôÊ±¼ä="0">>ÉèÖÃ.ini
-echo ÖØÆô´ÎÊý="0">>ÉèÖÃ.ini
-echo.>>ÉèÖÃ.ini
-echo #·þÎñÆ÷ÖØÆôºó×Ô¶¯±¸·Ý>>ÉèÖÃ.ini
-echo #ÊÇ·ñÔÚ·þÎñÆ÷ÖØÆôºó½øÐÐ±¸·Ý£¬ÇëÊäÈë£¨¿ª»ò¹Ø£©£¨¹Ø±ÕÊ±ÎÞÊÓºóÁ½¸ö²ÎÊý£©>>ÉèÖÃ.ini
-echo #±¸·ÝÃû³ÆÖ¸·þÎñÆ÷±¸·ÝÎÄ¼þµÄÎÄ¼þÃû£¬¿ÉÒÔ×Ô¶¨ÒåÃû³Æ>>ÉèÖÃ.ini
-echo #Èç¹û¿ªÆô×Ô¶¯±¸·Ý£¬ÇëÊäÈë±¸·ÝÂ·¾¶£¨ÀýÈç: "C:\Users\Administrator\Desktop\Server\±¸·Ý"£©>>ÉèÖÃ.ini
-echo ×Ô¶¯±¸·Ý="¹Ø">>ÉèÖÃ.ini
-echo ±¸·ÝÃû³Æ="·þÎñÆ÷±¸·Ý">>ÉèÖÃ.ini
-echo ±¸·ÝÂ·¾¶="">>ÉèÖÃ.ini
-echo.>>ÉèÖÃ.ini
-echo #×¢£ºµÚÒ»´Î¿ª·þ¿ÉÄÜ·þÎñÆ÷ÎÄ¼þÉÐÎ´¸üÐÂ£¬»áµ¼ÖÂ¼ì²â¶Ë¿ÚºÅµÈ³ö´í£¬ºóÐø¼´¿ÉÍêÃÀÔËÐÐ£¡>>ÉèÖÃ.ini
-echo #×¢£ºÃ¿¸ö²ÎÊýÇëÑÏ¸ñ°´ÕÕ×¢ÊÍ½øÐÐÉèÖÃ£¬¼ì²éÃû×Ö»òÑ¡ÏîÊÇ·ñÉèÖÃÕýÈ·£¬·ñÔò±¨´í¸Å²»¸ºÔð£¡>>ÉèÖÃ.ini
-echo.>>ÉèÖÃ.ini
-echo #ÃâÔðÉùÃ÷£º>>ÉèÖÃ.ini
-echo #ÓÃ»§ÈôÒòÊ¹ÓÃ±¾Èí¼þ¶øµ¼ÖÂµÄÈÎºÎÖÇÁ¦ÎÊÌâ¼°ºó¹û£¬¾ùÓÉ×Ô¼º¸ºÔð£¬±¾Èí¼þ²»¸ºÈÎºÎÔðÈÎ£¡>>ÉèÖÃ.ini
-echo #Ê¹ÓÃ±¾Èí¼þ¼´´ú±íÓÃ»§ÒÑÖªÏþÒÔÉÏÄÚÈÝ£¡>>ÉèÖÃ.ini
-echo #Golden_GodsunÖÆ×÷£¨ÇëÎðÐÞ¸Ä°æ±¾ºÅ£©>>ÉèÖÃ.ini
-echo Èí¼þ°æ±¾="v5.1.4">>ÉèÖÃ.ini
+echo #æœåŠ¡å™¨è½¯ä»¶çš„æ ‡é¢˜åç§°>>è®¾ç½®.ini
+echo #æ£€æµ‹æœåŠ¡å™¨ç«¯å£å·å¹¶æ˜¾ç¤ºåœ¨æ ‡é¢˜ä¸Šï¼Œè¾“å…¥ï¼ˆå¼€æˆ–å…³ï¼‰>>è®¾ç½®.ini
+echo æ ‡é¢˜="æœåŠ¡å™¨">>è®¾ç½®.ini
+echo æ£€æµ‹ç«¯å£å·="å¼€">>è®¾ç½®.ini
+echo.>>è®¾ç½®.ini
+echo #æ˜¯å¦æŒ‡å®šä½¿ç”¨æŸä¸ªè·¯å¾„çš„Java>>è®¾ç½®.ini
+echo #é€‚ç”¨äºŽä¸åŒç‰ˆæœ¬çš„æœåŠ¡å™¨ç”¨ä¸åŒç‰ˆæœ¬çš„Javaï¼Œå¦‚æžœæƒ³åˆ‡æ¢æ¨¡å¼ï¼Œè¯·è¾“å…¥ï¼ˆå¼€æˆ–å…³ï¼‰ï¼ˆå¼€å¯æ—¶æ— è§†Javaä½ç½®ï¼‰>>è®¾ç½®.ini
+echo #å¦‚æžœå…³é—­è‡ªåŠ¨æ£€æµ‹Javaï¼Œè¯·æ‰‹åŠ¨è¾“å…¥Javaè·¯å¾„ï¼ˆä¾‹å¦‚: "C:\Program Files\Zulu\zulu-8\bin\java.exe"ï¼‰>>è®¾ç½®.ini
+echo #æ˜¯å¦æ·»åŠ å¯åŠ¨çš„é¢å¤–JVMå‚æ•°ï¼ˆä¾‹å¦‚: "-Dusing.aikars.flags=https://mcflags.emc.gs"ï¼‰>>è®¾ç½®.ini
+echo #æœ¬è½¯ä»¶å·²éƒ¨åˆ†ä½¿ç”¨aikarçš„è„šæœ¬å‚æ•°ï¼Œè¯·å‹¿é‡å¤æ·»åŠ ï¼ˆä¸æ‡‚è¯·ç•™ç©ºï¼‰>>è®¾ç½®.ini
+echo è‡ªåŠ¨æ£€æµ‹Java="å¼€">>è®¾ç½®.ini
+echo Javaè·¯å¾„="">>è®¾ç½®.ini
+echo é¢å¤–JVM="">>è®¾ç½®.ini
+echo.>>è®¾ç½®.ini
+echo #æœ€å¤§å†…å­˜åŠæœ€å°å†…å­˜ï¼ˆè¯·å¡«å†™å•ä½Mæˆ–Gï¼‰>>è®¾ç½®.ini
+echo æœ€å¤§å†…å­˜="2G">>è®¾ç½®.ini
+echo æœ€å°å†…å­˜="2G">>è®¾ç½®.ini
+echo.>>è®¾ç½®.ini
+echo #æœåŠ¡å™¨æ ¸å¿ƒè‡ªåŠ¨æ£€æµ‹åŠæ‰‹åŠ¨è¾“å…¥>>è®¾ç½®.ini
+echo #æ˜¯å¦è‡ªåŠ¨è¯†åˆ«æ ¸å¿ƒï¼Œå¦‚æžœæƒ³åˆ‡æ¢æ¨¡å¼ï¼Œè¯·è¾“å…¥ï¼ˆå¼€æˆ–å…³ï¼‰ï¼ˆå¼€å¯æ—¶æ— è§†æ ¸å¿ƒåç§°ï¼‰>>è®¾ç½®.ini
+echo #æ£€æµ‹æ ¸å¿ƒä»…é™äºŽå½“å‰è·¯å¾„åªæœ‰ä¸€ä¸ªjaræ–‡ä»¶ï¼Œå¦åˆ™å¯èƒ½å‡ºé”™ï¼ï¼ˆæ ¸å¿ƒåç§°ä¸èƒ½å¸¦ç©ºæ ¼ï¼‰>>è®¾ç½®.ini
+echo #å¦‚æžœå…³é—­è‡ªåŠ¨æ£€æµ‹ï¼Œè¯·æ‰‹åŠ¨è¾“å…¥æ ¸å¿ƒåç§°ï¼ˆä¾‹å¦‚: Server.jarï¼‰>>è®¾ç½®.ini
+echo è‡ªåŠ¨æ£€æµ‹æ ¸å¿ƒ="å¼€">>è®¾ç½®.ini
+echo æ ¸å¿ƒåç§°="">>è®¾ç½®.ini
+echo.>>è®¾ç½®.ini
+echo #æœåŠ¡å™¨é‡å¯æ¨¡å¼åŠæ—¶é—´æ¬¡æ•°>>è®¾ç½®.ini
+echo #æœåŠ¡å™¨å…³é—­åŽæ˜¯å¦é‡å¯ï¼Œå¦‚æžœæƒ³åˆ‡æ¢æ¨¡å¼ï¼Œè¯·è¾“å…¥ï¼ˆå¼€æˆ–å…³ï¼‰ï¼ˆå…³é—­æ—¶æ— è§†åŽä¸¤ä¸ªå‚æ•°ï¼Œå¹¶å…³é—­è‡ªåŠ¨å¤‡ä»½ï¼‰>>è®¾ç½®.ini
+echo #å¦‚æžœæƒ³å»¶è¿Ÿé‡å¯æ—¶é—´ï¼Œé‚£ä¹ˆè¯·å¡«å†™æ•°å­—ï¼ˆå•ä½: ç§’ï¼‰>>è®¾ç½®.ini
+echo #é‡å¯æ¬¡æ•°é¡¾åæ€ä¹‰é‡å¯å‡ æ¬¡ï¼Œå¦‚æžœæƒ³å…³é—­ï¼Œåœ¨é‡å¯æ¬¡æ•°å¡«å†™0å³å¯>>è®¾ç½®.ini
+echo è‡ªåŠ¨é‡å¯="å¼€">>è®¾ç½®.ini
+echo é‡å¯æ—¶é—´="0">>è®¾ç½®.ini
+echo é‡å¯æ¬¡æ•°="0">>è®¾ç½®.ini
+echo.>>è®¾ç½®.ini
+echo #æœåŠ¡å™¨é‡å¯åŽè‡ªåŠ¨å¤‡ä»½>>è®¾ç½®.ini
+echo #æ˜¯å¦åœ¨æœåŠ¡å™¨é‡å¯åŽè¿›è¡Œå¤‡ä»½ï¼Œè¯·è¾“å…¥ï¼ˆå¼€æˆ–å…³ï¼‰ï¼ˆå…³é—­æ—¶æ— è§†åŽä¸¤ä¸ªå‚æ•°ï¼‰>>è®¾ç½®.ini
+echo #å¤‡ä»½åç§°æŒ‡æœåŠ¡å™¨å¤‡ä»½æ–‡ä»¶çš„æ–‡ä»¶åï¼Œå¯ä»¥è‡ªå®šä¹‰åç§°>>è®¾ç½®.ini
+echo #å¦‚æžœå¼€å¯è‡ªåŠ¨å¤‡ä»½ï¼Œè¯·è¾“å…¥å¤‡ä»½è·¯å¾„ï¼ˆä¾‹å¦‚: "C:\Users\Administrator\Desktop\Server\å¤‡ä»½"ï¼‰>>è®¾ç½®.ini
+echo è‡ªåŠ¨å¤‡ä»½="å…³">>è®¾ç½®.ini
+echo å¤‡ä»½åç§°="æœåŠ¡å™¨å¤‡ä»½">>è®¾ç½®.ini
+echo å¤‡ä»½è·¯å¾„="">>è®¾ç½®.ini
+echo.>>è®¾ç½®.ini
+echo #æ³¨ï¼šç¬¬ä¸€æ¬¡å¼€æœå¯èƒ½æœåŠ¡å™¨æ–‡ä»¶å°šæœªæ›´æ–°ï¼Œä¼šå¯¼è‡´æ£€æµ‹ç«¯å£å·ç­‰å‡ºé”™ï¼ŒåŽç»­å³å¯å®Œç¾Žè¿è¡Œï¼>>è®¾ç½®.ini
+echo #æ³¨ï¼šæ¯ä¸ªå‚æ•°è¯·ä¸¥æ ¼æŒ‰ç…§æ³¨é‡Šè¿›è¡Œè®¾ç½®ï¼Œæ£€æŸ¥åå­—æˆ–é€‰é¡¹æ˜¯å¦è®¾ç½®æ­£ç¡®ï¼Œå¦åˆ™æŠ¥é”™æ¦‚ä¸è´Ÿè´£ï¼>>è®¾ç½®.ini
+echo.>>è®¾ç½®.ini
+echo #å…è´£å£°æ˜Žï¼š>>è®¾ç½®.ini
+echo #ç”¨æˆ·è‹¥å› ä½¿ç”¨æœ¬è½¯ä»¶è€Œå¯¼è‡´çš„ä»»ä½•æ™ºåŠ›é—®é¢˜åŠåŽæžœï¼Œå‡ç”±è‡ªå·±è´Ÿè´£ï¼Œæœ¬è½¯ä»¶ä¸è´Ÿä»»ä½•è´£ä»»ï¼>>è®¾ç½®.ini
+echo #ä½¿ç”¨æœ¬è½¯ä»¶å³ä»£è¡¨ç”¨æˆ·å·²çŸ¥æ™“ä»¥ä¸Šå†…å®¹ï¼>>è®¾ç½®.ini
+echo #Golden_Godsunåˆ¶ä½œï¼ˆè¯·å‹¿ä¿®æ”¹ç‰ˆæœ¬å·ï¼‰>>è®¾ç½®.ini
+echo è½¯ä»¶ç‰ˆæœ¬="v5.1.4">>è®¾ç½®.ini
 goto :end
 :1
-title ¾¯¸æ£ºÎ´¼ì²âµ½"ÉèÖÃ.ini"ÎÄ¼þ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°Íù"ÉèÖÃ.ini"ÉèÖÃÆô¶¯²ÎÊý£¡
+title è­¦å‘Šï¼šæœªæ£€æµ‹åˆ°"è®¾ç½®.ini"æ–‡ä»¶ï¼Œå·²è‡ªåŠ¨åˆ›å»ºæ–°çš„é…ç½®æ–‡ä»¶ï¼Œè¯·å‰å¾€"è®¾ç½®.ini"è®¾ç½®å¯åŠ¨å‚æ•°ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo ¾¯¸æ£ºÎ´¼ì²âµ½"ÉèÖÃ.ini"ÎÄ¼þ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°Íù"ÉèÖÃ.ini"ÉèÖÃÆô¶¯²ÎÊý£¡
+@echo è­¦å‘Šï¼šæœªæ£€æµ‹åˆ°"è®¾ç½®.ini"æ–‡ä»¶ï¼Œå·²è‡ªåŠ¨åˆ›å»ºæ–°çš„é…ç½®æ–‡ä»¶ï¼Œè¯·å‰å¾€"è®¾ç½®.ini"è®¾ç½®å¯åŠ¨å‚æ•°ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 goto :config
 :2
-title ¾¯¸æ£ºÉèÖÃÎÄ¼þ°æ±¾´íÎó£¬ÎÞ·¨Õý³£ÔËÐÐ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°ÍùÖØÉèÆô¶¯²ÎÊý£¡
+title è­¦å‘Šï¼šè®¾ç½®æ–‡ä»¶ç‰ˆæœ¬é”™è¯¯ï¼Œæ— æ³•æ­£å¸¸è¿è¡Œï¼Œå·²è‡ªåŠ¨åˆ›å»ºæ–°çš„é…ç½®æ–‡ä»¶ï¼Œè¯·å‰å¾€é‡è®¾å¯åŠ¨å‚æ•°ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo ¾¯¸æ£ºÉèÖÃÎÄ¼þ°æ±¾´íÎó£¬ÎÞ·¨Õý³£ÔËÐÐ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°ÍùÖØÉèÆô¶¯²ÎÊý£¡
+@echo è­¦å‘Šï¼šè®¾ç½®æ–‡ä»¶ç‰ˆæœ¬é”™è¯¯ï¼Œæ— æ³•æ­£å¸¸è¿è¡Œï¼Œå·²è‡ªåŠ¨åˆ›å»ºæ–°çš„é…ç½®æ–‡ä»¶ï¼Œè¯·å‰å¾€é‡è®¾å¯åŠ¨å‚æ•°ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
-del /q ÉèÖÃ.ini >nul
+del /q è®¾ç½®.ini >nul
 goto :config
 :3
-title ¾¯¸æ£º×Ô¶¯¼ì²âÉèÖÃ²ÎÊý´íÎó£¬Çë¼ì²éÊÇ·ñÎª¿ª»ò¹Ø£¡
+title è­¦å‘Šï¼šè‡ªåŠ¨æ£€æµ‹è®¾ç½®å‚æ•°é”™è¯¯ï¼Œè¯·æ£€æŸ¥æ˜¯å¦ä¸ºå¼€æˆ–å…³ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo                ¾¯¸æ£º×Ô¶¯¼ì²âÉèÖÃ²ÎÊý´íÎó£¬Çë¼ì²éÊÇ·ñÎª¿ª»ò¹Ø£¡
+@echo                è­¦å‘Šï¼šè‡ªåŠ¨æ£€æµ‹è®¾ç½®å‚æ•°é”™è¯¯ï¼Œè¯·æ£€æŸ¥æ˜¯å¦ä¸ºå¼€æˆ–å…³ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 goto :end
 :4
-title ¾¯¸æ£ºÎ´¼ì²âµ½¿ª·þºËÐÄjar£¬Çë½«ºËÐÄ¸´ÖÆµ½´ËÈí¼þËùÔÚÄ¿Â¼£¡
+title è­¦å‘Šï¼šæœªæ£€æµ‹åˆ°å¼€æœæ ¸å¿ƒjarï¼Œè¯·å°†æ ¸å¿ƒå¤åˆ¶åˆ°æ­¤è½¯ä»¶æ‰€åœ¨ç›®å½•ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo           ¾¯¸æ£ºÎ´¼ì²âµ½¿ª·þºËÐÄjar£¬Çë½«ºËÐÄ¸´ÖÆµ½´ËÈí¼þËùÔÚÄ¿Â¼£¡
+@echo           è­¦å‘Šï¼šæœªæ£€æµ‹åˆ°å¼€æœæ ¸å¿ƒjarï¼Œè¯·å°†æ ¸å¿ƒå¤åˆ¶åˆ°æ­¤è½¯ä»¶æ‰€åœ¨ç›®å½•ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 goto :end
 :5
-title ¾¯¸æ£º"%Core%"ºËÐÄÃû³ÆÉèÖÃ´íÎó£¬ÇëÔÚ"ÉèÖÃ.ini"ÖÐÖØÐÂÉèÖÃÃû³Æ£¡
+title è­¦å‘Šï¼š"%Core%"æ ¸å¿ƒåç§°è®¾ç½®é”™è¯¯ï¼Œè¯·åœ¨"è®¾ç½®.ini"ä¸­é‡æ–°è®¾ç½®åç§°ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo         ¾¯¸æ£º"%Core%"ºËÐÄÃû³ÆÉèÖÃ´íÎó£¬ÇëÔÚ"ÉèÖÃ.ini"ÖÐÖØÐÂÉèÖÃÃû³Æ£¡
+@echo         è­¦å‘Šï¼š"%Core%"æ ¸å¿ƒåç§°è®¾ç½®é”™è¯¯ï¼Œè¯·åœ¨"è®¾ç½®.ini"ä¸­é‡æ–°è®¾ç½®åç§°ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 goto :end
 :6
-title ¾¯¸æ£ºÎ´¼ì²âµ½%Java%Â·¾¶ÏÂµÄJava£¬ÇëÔÚ"ÉèÖÃ.ini"ÖÐÖØÐÂÉèÖÃJavaÂ·¾¶£¡
+title è­¦å‘Šï¼šæœªæ£€æµ‹åˆ°%Java%è·¯å¾„ä¸‹çš„Javaï¼Œè¯·åœ¨"è®¾ç½®.ini"ä¸­é‡æ–°è®¾ç½®Javaè·¯å¾„ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo ¾¯¸æ£ºÎ´¼ì²âµ½%Java%Â·¾¶ÏÂµÄJava£¬ÇëÔÚ"ÉèÖÃ.ini"ÖÐÖØÐÂÉèÖÃJavaÂ·¾¶£¡
+@echo è­¦å‘Šï¼šæœªæ£€æµ‹åˆ°%Java%è·¯å¾„ä¸‹çš„Javaï¼Œè¯·åœ¨"è®¾ç½®.ini"ä¸­é‡æ–°è®¾ç½®Javaè·¯å¾„ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 goto :end
 :7
-title Í¨Öª£ºÉèÖÃµÄÖØÆô´ÎÊýÏÞÖÆÒÑ´ïµ½%ReLimits%´Î£¬ÒÑ×Ô¶¯¹Ø±Õ·þÎñÆ÷£¡
+title é€šçŸ¥ï¼šè®¾ç½®çš„é‡å¯æ¬¡æ•°é™åˆ¶å·²è¾¾åˆ°%ReLimits%æ¬¡ï¼Œå·²è‡ªåŠ¨å…³é—­æœåŠ¡å™¨ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo               Í¨Öª£ºÉèÖÃµÄÖØÆô´ÎÊýÏÞÖÆÒÑ´ïµ½%ReLimits%´Î£¬ÒÑ×Ô¶¯¹Ø±Õ·þÎñÆ÷£¡
+@echo               é€šçŸ¥ï¼šè®¾ç½®çš„é‡å¯æ¬¡æ•°é™åˆ¶å·²è¾¾åˆ°%ReLimits%æ¬¡ï¼Œå·²è‡ªåŠ¨å…³é—­æœåŠ¡å™¨ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 goto :end
 :8
-title ¾¯¸æ£ºÄú¿ªÆôÁË×Ô¶¯±¸·Ý£¬µ«Î´ÉèÖÃ×Ô¶¯±¸·ÝµÄÂ·¾¶£¬ÇëÇ°Íù"ÉèÖÃ.ini"ÖÐÉèÖÃÂ·¾¶£¡
+title è­¦å‘Šï¼šæ‚¨å¼€å¯äº†è‡ªåŠ¨å¤‡ä»½ï¼Œä½†æœªè®¾ç½®è‡ªåŠ¨å¤‡ä»½çš„è·¯å¾„ï¼Œè¯·å‰å¾€"è®¾ç½®.ini"ä¸­è®¾ç½®è·¯å¾„ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo ¾¯¸æ£ºÄú¿ªÆôÁË×Ô¶¯±¸·Ý£¬µ«Î´ÉèÖÃ×Ô¶¯±¸·ÝµÄÂ·¾¶£¬ÇëÇ°Íù"ÉèÖÃ.ini"ÖÐÉèÖÃÂ·¾¶£¡
+@echo è­¦å‘Šï¼šæ‚¨å¼€å¯äº†è‡ªåŠ¨å¤‡ä»½ï¼Œä½†æœªè®¾ç½®è‡ªåŠ¨å¤‡ä»½çš„è·¯å¾„ï¼Œè¯·å‰å¾€"è®¾ç½®.ini"ä¸­è®¾ç½®è·¯å¾„ï¼
 @echo.
 @echo -----------------------------------------------------------------------------------
 goto :end
@@ -270,8 +236,8 @@ goto :end
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
-@echo                                  ·þÎñÆ÷ÒÑ¹Ø±Õ
-@echo                                °´ÈÎÒâ¼üÍË³ö....
+@echo                                  æœåŠ¡å™¨å·²å…³é—­
+@echo                                æŒ‰ä»»æ„é”®é€€å‡º....
 @echo.
 @echo -----------------------------------------------------------------------------------
 pause >nul
