@@ -1,4 +1,4 @@
-```c
+```
 Minecraft Server Starter
 我的世界服务器启动Bat软件
 可更改标题，检测服务器端口号并显示
