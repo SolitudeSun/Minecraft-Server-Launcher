@@ -7,5 +7,6 @@ Minecraft Server Starter
 拥有自动重启，自定义重启时间，限制重启次数
 可以自动备份服务器所有文件，可自定义备份名称及备份路径
 
-由Golden_Godsun制作
+我的世界服务器启动Bat软件
+Golden_Godsun制作
 ```
