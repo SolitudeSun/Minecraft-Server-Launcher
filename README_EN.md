@@ -20,15 +20,13 @@ A script that can be used to start the Minecraft server core, with a variety of 
 ## Download
 [![Release](https://img.shields.io/github/v/release/SolitudeSun/Minecraft-Server-Launcher.svg?label=Release&logo=github&color=success)](https://github.com/SolitudeSun/Minecraft-Server-Launcher/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/SolitudeSun/Minecraft-Server-Launcher/total?label=Download&logo=github)](https://github.com/SolitudeSun/Minecraft-Server-Launcher/releases)
-
 > **You can download it on GitHub at [Latest Version](https://github.com/SolitudeSun/Minecraft-Server-Launcher/releases/latest)**
 
 ## License
 [![License](https://img.shields.io/github/license/SolitudeSun/Minecraft-Server-Launcher?label=License&logo=github)](LICENSE)
-
-> All patches are licensed under the MIT license, unless otherwise noted in the patch headers.
+> _All patches are licensed under the MIT license, unless otherwise noted in the patch headers._
 
 ## Author and special thanks
-**Author-[Golden_Godsun](https://github.com/SolitudeSun)**
+**Author [_Golden_Godsun_](https://github.com/SolitudeSun)**
 
-**Special Thanks-[Dongfeifan](https://github.com/dongffan)**
+**Special Thanks [_Dongfeifan_](https://github.com/dongffan)**
