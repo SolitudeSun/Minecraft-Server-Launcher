@@ -10,6 +10,7 @@
 可用于启动 Minecraft 服务器核心的脚本，拥有多种功能
 
 [English Language (Click)](README_EN.md)
+
 </div>
 
 ## 功能
