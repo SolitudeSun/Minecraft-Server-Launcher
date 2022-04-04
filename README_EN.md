@@ -17,8 +17,6 @@ A script that can be used to start the Minecraft server core, with a variety of 
 * Can automatically reboot, customize reboot time and limit the number of reboots
 * Customizable backup path and backup name, zip file name suffix can be with current time
 
-Translated with www.DeepL.com/Translator (free version)
-
 ## Download
 [![Release](https://img.shields.io/github/v/release/SolitudeSun/Minecraft-Server-Launcher.svg?label=Release&logo=github&color=success)](https://github.com/SolitudeSun/Minecraft-Server-Launcher/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/SolitudeSun/Minecraft-Server-Launcher/total?label=Download&logo=github)](https://github.com/SolitudeSun/Minecraft-Server-Launcher/releases)
