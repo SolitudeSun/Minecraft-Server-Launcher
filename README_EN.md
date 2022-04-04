@@ -7,8 +7,6 @@
 [![Stars](https://img.shields.io/github/stars/SolitudeSun/Minecraft-Server-Launcher?label=Stars&logo=github)](https://github.com/SolitudeSun/Minecraft-Server-Launcher/stargazers)
 
 A script that can be used to start the Minecraft server core, with a variety of functions
-
-[Chinese Language (Click)](README.md)
 </div>
 
 ## Function
