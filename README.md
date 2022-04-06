@@ -12,13 +12,13 @@
 </div>
 
 ## 功能
-
-* 可自动备份服务器所有文件
-* 可以指定某个路径的Java进行启动
-* 可检测服务器端口号并显示在标题上
-* 可以检测路径内的jar文件并自动启动核心
+* 可以自动备份服务器所有文件并压缩
+* 可以指定某个路径的Java启动服务器
+* 可检测Spigot等服务器的端口号显示在标题上
 * 可以自动重启，自定义重启时间，限制重启次数
+* 可以检测路径内的jar文件并自动启动服务器核心
 * 自定义备份路径及备份名称，压缩文件名后缀可带当前时间
+* 可以检测最后重启时间并显示在标题上，可检测服务器错误并停止服务器
 
 ## 下载
 [![Release](https://img.shields.io/github/v/release/SolitudeSun/Minecraft-Server-Launcher.svg?label=Release&logo=github&color=success)](https://github.com/SolitudeSun/Minecraft-Server-Launcher/releases/latest)
