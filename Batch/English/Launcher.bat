@@ -7,9 +7,9 @@ title is starting the server...
 @echo -----------------------------------------------------------------------------------
 @echo.
 @echo disclaimer.
-@echo users are responsible for any intellectual problems caused by the use of this software
-@echo users are responsible for any intellectual problems and consequences caused by the use of this software, and the software is not responsible for them.
-@echo use of this software means that the user is aware of the above!
+@echo The user is responsible for any intellectual problems and consequences caused 
+@echo by the use of the software, the software is not responsible for any of the above, 
+@echo the use of the software means that the user is aware of the above!
 @echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
