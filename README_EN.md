@@ -10,11 +10,12 @@ A script that can be used to start the Minecraft server core, with a variety of 
 </div>
 
 ## Function
-* All files on the server can be automatically backed up and compressed
 * You can specify a path to the Java startup server
+* Ability to select backup level, customize backup speed and size
+* All files on the server can be automatically backed up and compressed
+* Can detect the jar file in the path and automatically start the server core
 * Can detect the port number of Spigot and other servers displayed on the title
 * Can automatically restart, customize the restart time and limit the number of restarts
-* Can detect the jar file in the path and automatically start the server core
 * Customizable backup path and backup name, zip file name suffix can be with current time
 * Can detect the last restart time and display it on the title, can detect server errors and stop the server
 
