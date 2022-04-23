@@ -2,7 +2,7 @@
 set ReTimes=0
 :start
 title 正在启动服务器...
-@echo                             服务器启动软件v5.1.8
+@echo                             服务器启动软件v5.1.9
 @echo                               Golden_Godsun制作
 @echo -----------------------------------------------------------------------------------
 @echo.
@@ -19,7 +19,7 @@ title 正在启动服务器...
 @echo -----------------------------------------------------------------------------------
 if not exist "%~dp0设置.ini" (goto :1)
 for /f "tokens=1,* delims==" %%a in ('findstr "软件版本=" "设置.ini"') do (set Version=%%~b)
-if not "%Version%"=="v5.1.8" (goto :2)
+if not "%Version%"=="v5.1.9" (goto :2)
 if not exist "%~dp0*.jar" (goto :4)
 for /f "tokens=1,* delims==" %%a in ('findstr "检测端口号=" "设置.ini"') do (set AutoPort=%%~b)
 if not "%AutoPort%"=="开" (if not "%AutoPort%"=="关" (goto :3))
@@ -66,11 +66,13 @@ for /f "tokens=1,* delims==" %%a in ('findstr "最大内存=" "设置.ini"') do (set M
 for /f "tokens=1,* delims==" %%a in ('findstr "最小内存=" "设置.ini"') do (set MinRAM=%%~b)
 set /a Thour=%time:~0,2%
 if %Thour% LSS 10 (set Ttime=%date:~5,2%.%date:~8,2%-%time:~1,1%:%time:~3,2%) else (set Ttime=%date:~5,2%.%date:~8,2%-%time:~0,2%:%time:~3,2%)
-if "%LaSeconds%"=="开" (if "%AutoRestart%"=="开" (if "%AutoPort%"=="开" (title [%Title%]--重启[%ReTimes%]次--端口=[%Port%]--最后重启时间[%Ttime%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.8) else (title [%Title%]--重启[%ReTimes%]次--最后重启时间[%Ttime%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.8)) else (if "%AutoPort%"=="开" (title [%Title%]--端口=[%Port%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.8) else (title [%Title%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.8))) else (if "%AutoRestart%"=="开" (if "%AutoPort%"=="开" (title [%Title%]--重启[%ReTimes%]次--端口=[%Port%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.8) else (title [%Title%]--重启[%ReTimes%]次--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.8)) else (if "%AutoPort%"=="开" (title [%Title%]--端口=[%Port%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.8) else (title [%Title%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.8)))
-if exist "%~dp0eula.txt" (goto :yeula)&if exist "%~dp0modules.yml" (goto :yeula)&if exist "%~dp0velocity.toml" (goto :yeula)
+if "%LaSeconds%"=="开" (if "%AutoRestart%"=="开" (if "%AutoPort%"=="开" (title [%Title%]--重启[%ReTimes%]次--端口=[%Port%]--最后重启时间[%Ttime%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.9) else (title [%Title%]--重启[%ReTimes%]次--最后重启时间[%Ttime%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.9)) else (if "%AutoPort%"=="开" (title [%Title%]--端口=[%Port%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.9) else (title [%Title%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.9))) else (if "%AutoRestart%"=="开" (if "%AutoPort%"=="开" (title [%Title%]--重启[%ReTimes%]次--端口=[%Port%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.9) else (title [%Title%]--重启[%ReTimes%]次--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.9)) else (if "%AutoPort%"=="开" (title [%Title%]--端口=[%Port%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.9) else (title [%Title%]--内存=[%MinRAM%/%MaxRAM%]--Golden_Godsun制作v5.1.9)))
+if exist "%~dp0eula.txt" (goto :yeula)
+if exist "%~dp0modules.yml" (goto :yeula)
+if exist "%~dp0velocity.toml" (goto :yeula)
 echo #This End User License Agreement has been automatically written and agreed to using the startup software!>>eula.txt
 echo (https://account.mojang.com/documents/minecraft_eula).>>eula.txt
-echo #Golden_Godsun production, software version v5.1.8>>eula.txt
+echo #Golden_Godsun production, software version v5.1.9>>eula.txt
 echo eula=true>>eula.txt
 @echo.
 @echo                   未检测到"eula.txt"文件，已自动写入并同意！
@@ -81,24 +83,24 @@ set Fdate=%date:~0,4%%date:~5,2%%date:~8,2%&set Ftime=%time:~0,2%%time:~3,2%%tim
 if "%AutoJVM%"=="关" (goto :njvm)
 if "%MainJava%"=="关" (goto :njava)
 if not exist "%~dp0server.properties" (goto :B&V)
-java -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar %Core% --nogui
+java -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar %Core% nogui
 goto :stop
 :B&V
 java %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -jar %Core%
 goto :stop
 :njava
 if not exist "%~dp0server.properties" (goto :JavaB&V)
-"%Java%" -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar %Core% --nogui
+"%Java%" -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar %Core% nogui
 goto :stop
 :JavaB&V
 "%Java%" -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -jar %Core%
 goto :stop
 :njvm
 if "%MainJava%"=="关" (goto :njvmjava)
-java %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -jar %Core% %OJVM% --nogui
+java %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -jar %Core% %OJVM% nogui
 goto :stop
 :njvmjava
-"%Java%" %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -jar %Core% %OJVM% --nogui
+"%Java%" %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -jar %Core% %OJVM% nogui
 goto :stop
 :stop
 set /a Stime=%time:~0,2%%time:~3,2%%time:~6,2%-%Ftime%&set Sdate=%date:~0,4%%date:~5,2%%date:~8,2%
@@ -190,7 +192,7 @@ echo #免责声明：>>设置.ini
 echo #用户若因使用本软件而导致的任何智力问题及后果，均由自己负责，本软件不负任何责任！>>设置.ini
 echo #使用本软件即代表用户已知晓以上内容！>>设置.ini
 echo #Golden_Godsun制作（请勿修改版本号）>>设置.ini
-echo 软件版本="v5.1.8">>设置.ini
+echo 软件版本="v5.1.9">>设置.ini
 goto :exit
 :1
 title 提示：未检测到"设置.ini"文件，已自动创建新的配置文件，请前往"设置.ini"设置启动参数！
