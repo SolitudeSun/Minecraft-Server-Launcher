@@ -18,8 +18,9 @@
 * 可检测Spigot等服务器的端口号显示在标题上
 * 可以自动重启，自定义重启时间，限制重启次数
 * 可以检测路径内的jar文件并自动启动服务器核心
-* 自定义备份路径及备份名称，压缩文件名后缀可带当前时间
-* 可以检测最后重启时间并显示在标题上，可检测服务器错误并停止服务器
+* 自定义备份路径及备份名称，压缩文件名后缀可带备份时的时间
+* 标题支持显示服务器最后的重启时间，启动时可检测服务器错误并停止服务器
+* 可以自动检测服务器核心并使用最优的JVM参数，也可以使用自定义JVM参数和额外参数
 
 ## 下载
 [![Release](https://img.shields.io/github/v/release/SolitudeSun/Minecraft-Server-Launcher.svg?label=Release&logo=github&color=success)](https://github.com/SolitudeSun/Minecraft-Server-Launcher/releases/latest)

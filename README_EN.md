@@ -13,11 +13,12 @@ A script that can be used to start the Minecraft server core, with a variety of 
 * You can specify a path to the Java startup server
 * Ability to select backup level, customize backup speed and size
 * All files on the server can be automatically backed up and compressed
-* Can detect the jar file in the path and automatically start the server core
-* Can detect the port number of Spigot and other servers displayed on the title
-* Can automatically restart, customize the restart time and limit the number of restarts
-* Customizable backup path and backup name, zip file name suffix can be with current time
-* Can detect the last restart time and display it on the title, can detect server errors and stop the server
+* Automatic reboot, customizable reboot time, limit the number of reboots
+* Can detect jar files in the path and start the server core automatically
+* Can detect the port number of Spigot and other servers to be displayed on the title
+* Custom backup path and backup name, compressed file name suffix can be with the time when the backup
+* Header supports displaying the last restart time of the server, detecting server errors and stopping the server at startup
+* Can automatically detect the server core and use the optimal JVM parameters, and can also use custom JVM parameters and additional parameters
 
 ## Download
 [![Release](https://img.shields.io/github/v/release/SolitudeSun/Minecraft-Server-Launcher.svg?label=Release&logo=github&color=success)](https://github.com/SolitudeSun/Minecraft-Server-Launcher/releases/latest)
