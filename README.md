@@ -7,8 +7,6 @@
 [![Stars](https://img.shields.io/github/stars/SolitudeSun/Minecraft-Server-Launcher?label=Stars&logo=github)](https://github.com/SolitudeSun/Minecraft-Server-Launcher/stargazers)
 
 可用于启动 Minecraft 服务器核心的脚本，有多种功能可供使用
-
-[English Language (Click)](README_EN.md)
 </div>
 
 ## 功能
