@@ -3,7 +3,7 @@
 set ReTimes=0
 :start
 title ÕýÔÚÆô¶¯·þÎñÆ÷...
-@echo                             ·þÎñÆ÷Æô¶¯Èí¼þv5.2.3
+@echo                             ·þÎñÆ÷Æô¶¯Èí¼þv5.2.4
 @echo                               Golden_GodsunÖÆ×÷
 @echo -----------------------------------------------------------------------------------
 @echo.
@@ -24,7 +24,7 @@ for /f "tokens=1,* delims==" %%a in ('findstr "Èí¼þ°æ±¾=" "ÉèÖÃ.ini"') do (set V
 for /f "tokens=1,* delims==" %%a in ('findstr "Debug=" "ÉèÖÃ.ini"') do (set Debug=%%~b)
 if not "%Debug%"=="true" (@echo off) else (goto :11)
 :debug
-if not "%Version%"=="v5.2.3" (goto :2)
+if not "%Version%"=="v5.2.4" (goto :2)
 if not exist "%~dp0*.jar" (goto :4)
 for /f "tokens=1,* delims==" %%a in ('findstr "×Ô¶¯ÖØÆô=" "ÉèÖÃ.ini"') do (set AutoRestart=%%~b)
 for /f "tokens=1,* delims==" %%a in ('findstr "¼ì²â¶Ë¿ÚºÅ=" "ÉèÖÃ.ini"') do (set AutoPort=%%~b)
@@ -67,31 +67,31 @@ for /f "tokens=1,* delims==" %%a in ('findstr "±êÌâ=" "ÉèÖÃ.ini"') do (set Title
 for /f "tokens=1,* delims==" %%a in ('findstr "×î´óÄÚ´æ=" "ÉèÖÃ.ini"') do (set MaxRAM=%%~b)
 for /f "tokens=1,* delims==" %%a in ('findstr "×îÐ¡ÄÚ´æ=" "ÉèÖÃ.ini"') do (set MinRAM=%%~b)
 :: Æô¶¯±êÌâÓëÊ±¼ä
-if "%time:~0,2%" LSS "10" (
+if %time:~0,2% LSS 10 (
     set Atime=%date:~5,2%.%date:~8,2%-%time:~1,1%:%time:~3,2%) else (
     set Atime=%date:~5,2%.%date:~8,2%-%time:~0,2%:%time:~3,2%)
 if "%LaSeconds%"=="¿ª" (
     if "%AutoRestart%"=="¿ª" (
         if "%AutoPort%"=="¿ª" (
-            title [%Title%]--ÖØÆô[%ReTimes%]´Î--¶Ë¿Ú=[%Port%]-×î½üÖØÆôÊ±¼ä[%Atime%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.3) else (
-            title [%Title%]--ÖØÆô[%ReTimes%]´Î--×î½üÖØÆôÊ±¼ä[%Atime%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.3)) else (
+            title [%Title%]--ÖØÆô[%ReTimes%]´Î--¶Ë¿Ú=[%Port%]-×î½üÖØÆôÊ±¼ä[%Atime%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.4) else (
+            title [%Title%]--ÖØÆô[%ReTimes%]´Î--×î½üÖØÆôÊ±¼ä[%Atime%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.4)) else (
         if "%AutoPort%"=="¿ª" (
-            title [%Title%]--¶Ë¿Ú=[%Port%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.3) else (
-            title [%Title%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.3))) else (
+            title [%Title%]--¶Ë¿Ú=[%Port%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.4) else (
+            title [%Title%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.4))) else (
     if "%AutoRestart%"=="¿ª" (
         if "%AutoPort%"=="¿ª" (
-            title [%Title%]--ÖØÆô[%ReTimes%]´Î--¶Ë¿Ú=[%Port%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.3) else (
-            title [%Title%]--ÖØÆô[%ReTimes%]´Î--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.3)) else (
+            title [%Title%]--ÖØÆô[%ReTimes%]´Î--¶Ë¿Ú=[%Port%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.4) else (
+            title [%Title%]--ÖØÆô[%ReTimes%]´Î--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.4)) else (
         if "%AutoPort%"=="¿ª" (
-            title [%Title%]--¶Ë¿Ú=[%Port%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.3) else (
-            title [%Title%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.3)))
+            title [%Title%]--¶Ë¿Ú=[%Port%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.4) else (
+            title [%Title%]--ÄÚ´æ=[%MinRAM%/%MaxRAM%]--Golden_GodsunÖÆ×÷v5.2.4)))
 :: ¼ì²â²¢Í¬ÒâEULA
 if exist "%~dp0eula.txt" (goto :yeula)
 if exist "%~dp0modules.yml" (goto :yeula)
 if exist "%~dp0velocity.toml" (goto :yeula)
 echo #This End User License Agreement has been automatically written and agreed to using the startup software!>>eula.txt
 echo (https://account.mojang.com/documents/minecraft_eula).>>eula.txt
-echo #Golden_Godsun production, software version v5.2.3>>eula.txt
+echo #Golden_Godsun production, software version v5.2.4>>eula.txt
 echo #%date:~0,4%/%date:~5,2%/%date:~8,2% %time:~0,2%:%time:~3,2%:%time:~6,2%>>eula.txt
 echo eula=true>>eula.txt
 @echo.
@@ -100,7 +100,7 @@ echo eula=true>>eula.txt
 @echo -----------------------------------------------------------------------------------
 :yeula
 :: Æô¶¯·þÎñÆ÷
-set Adate=%date:~0,4%%date:~5,2%%date:~8,2%&if "%time:~0,2%" EQU "0" (set Atime=%time:~3,2%%time:~6,2%) else (set Atime=%time:~0,2%%time:~3,2%%time:~6,2%)
+set Adate=%date:~0,4%%date:~5,2%%date:~8,2%&if %time:~0,2% EQU 0 (set Atime=%time:~3,2%%time:~6,2%) else (set Atime=%time:~0,2%%time:~3,2%%time:~6,2%)
 if "%AutoJVM%"=="¹Ø" (
     if "%MainJava%"=="¹Ø" (
         "%Java%" %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -jar "%Core%" %OJVM% nogui) else (
@@ -113,13 +113,15 @@ if "%AutoJVM%"=="¹Ø" (
             java %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -jar "%Core%" %OJVM% nogui) else (
             java %JVM% -Xms%MinRAM% -Xmx%MaxRAM% -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar "%Core%" %OJVM% nogui)))
 :: ¹Ø±ÕÓëÖØÆô·þÎñÆ÷
-set Bdate=%date:~0,4%%date:~5,2%%date:~8,2%&if "%time:~0,2%" EQU "0" (set /a Btime=%time:~3,2%%time:~6,2%-%Atime%) else (set /a Btime=%time:~0,2%%time:~3,2%%time:~6,2%-%Atime%)
-if "%Btime%" LEQ "2" (if "%Adate%"=="%Bdate%" (goto :10))
+set Bdate=%date:~0,4%%date:~5,2%%date:~8,2%&if %time:~0,2% EQU 0 (set /a Btime=%time:~3,2%%time:~6,2%-%Atime%) else (set /a Btime=%time:~0,2%%time:~3,2%%time:~6,2%-%Atime%)
+if %Btime% LEQ 2 (if %Adate%==%Bdate% (goto :10))
 set /a ReTimes=%ReTimes%+1
 if "%AutoRestart%"=="¹Ø" (goto :stop)
 if "%ReTimes%"=="%ReLimits%" (goto :7)
 if "%AutoBackup%"=="¿ª" (goto :backup)
 :endbackup
+title ·þÎñÆ÷½«ÔÚ%ReSeconds%ÃëºóÖØÆô
+@echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
 @echo                             ·þÎñÆ÷½«ÔÚ%ReSeconds%ÃëºóÖØÆô
@@ -130,20 +132,21 @@ goto :start
 :: ±¸·Ý·þÎñÆ÷
 :backup
 title ·þÎñÆ÷¼´½«±¸·Ý£¬Çë½øÐÐÈ·ÈÏ£¡
+@echo.
 @echo -----------------------------------------------------------------------------------
 @echo.
 @echo                            ·þÎñÆ÷¼´½«±¸·Ý£¬Çë½øÐÐÈ·ÈÏ£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
 choice /c TF /n /t 10 /d F /m "È·ÈÏ±¸·ÝÇë°´"T"£¬·ñÔòÇë°´"F"£¬10Ãëºó×Ô¶¯È¡Ïû±¸·Ý£º"
-if not "%errorleve%"=="1" (goto :endbackup)
+if not %errorlevel%==1 (goto :endbackup)
 title ·þÎñÆ÷±¸·ÝÖÐ...
 @echo -----------------------------------------------------------------------------------
 @echo.
 @echo                              ·þÎñÆ÷ÕýÔÚ½øÐÐ±¸·Ý
 @echo.
 @echo -----------------------------------------------------------------------------------
-if "%time:~0,2%" LSS "10" (
+if %time:~0,2% LSS 10 (
     set Atime=%time:~1,1%.%time:~3,2%.%time:~6,2%) else (
     set Atime=%time:~0,2%.%time:~3,2%.%time:~6,2%)
 "%AppData%\Server Components\7z.exe" a -t7z "%BackupWay%\%BackupName%-[%date:~0,4%.%date:~5,2%.%date:~8,2%]-[%Atime%].7z" "%~dp0*" -r -mf -mmt -mhc -mhcf -mx%BackupLevel% -ms=200m
@@ -207,7 +210,7 @@ echo #ÃâÔðÉùÃ÷£º>>ÉèÖÃ.ini
 echo #ÓÃ»§ÈôÒòÊ¹ÓÃ±¾Èí¼þ¶øµ¼ÖÂµÄÈÎºÎÆäËûÎÊÌâ¼°ºó¹û£¬¾ùÓÉ×Ô¼º¸ºÔð£¬±¾Èí¼þ²»¸ºÈÎºÎÔðÈÎ£¡>>ÉèÖÃ.ini
 echo #Ê¹ÓÃ±¾Èí¼þ¼´´ú±íÓÃ»§ÒÑÖªÏþÒÔÉÏÄÚÈÝ£¡>>ÉèÖÃ.ini
 echo #Golden_GodsunÖÆ×÷£¨ÇëÎðÐÞ¸Ä°æ±¾ºÅ£©>>ÉèÖÃ.ini
-echo Èí¼þ°æ±¾="v5.2.3">>ÉèÖÃ.ini
+echo Èí¼þ°æ±¾="v5.2.4">>ÉèÖÃ.ini
 echo Debug="false">>ÉèÖÃ.ini
 goto :stop
 :: ±¨´íÎÊÌâ¼°ÌáÊ¾
@@ -219,7 +222,7 @@ title ÌáÊ¾£ºÎ´¼ì²âµ½'ÉèÖÃ.ini'ÎÄ¼þ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÉèÖÃ
 @echo ÌáÊ¾£ºÎ´¼ì²âµ½'ÉèÖÃ.ini'ÎÄ¼þ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÉèÖÃÆô¶¯²ÎÊý£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
-mshta vbscript:msgbox("ÌáÊ¾£ºÎ´¼ì²âµ½'ÉèÖÃ.ini'ÎÄ¼þ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÉèÖÃÆô¶¯²ÎÊý£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.3     Golden_GodsunÖÆ×÷")(window.close)
+mshta vbscript:msgbox("ÌáÊ¾£ºÎ´¼ì²âµ½'ÉèÖÃ.ini'ÎÄ¼þ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÉèÖÃÆô¶¯²ÎÊý£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.4     Golden_GodsunÖÆ×÷")(window.close)
 goto :config
 :2
 title ¾¯¸æ£ºÉèÖÃÎÄ¼þ°æ±¾´íÎó£¬ÎÞ·¨Õý³£ÔËÐÐ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°ÍùÖØÉèÆô¶¯²ÎÊý£¡
@@ -229,7 +232,7 @@ title ¾¯¸æ£ºÉèÖÃÎÄ¼þ°æ±¾´íÎó£¬ÎÞ·¨Õý³£ÔËÐÐ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°ÍùÖØÉèÆô
 @echo ¾¯¸æ£ºÉèÖÃÎÄ¼þ°æ±¾´íÎó£¬ÎÞ·¨Õý³£ÔËÐÐ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°ÍùÖØÉèÆô¶¯²ÎÊý£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
-mshta vbscript:msgbox("¾¯¸æ£ºÉèÖÃÎÄ¼þ°æ±¾´íÎó£¬ÎÞ·¨Õý³£ÔËÐÐ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°ÍùÖØÉèÆô¶¯²ÎÊý£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.3     Golden_GodsunÖÆ×÷")(window.close)
+mshta vbscript:msgbox("¾¯¸æ£ºÉèÖÃÎÄ¼þ°æ±¾´íÎó£¬ÎÞ·¨Õý³£ÔËÐÐ£¬ÒÑ×Ô¶¯´´½¨ÐÂµÄÅäÖÃÎÄ¼þ£¬ÇëÇ°ÍùÖØÉèÆô¶¯²ÎÊý£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.4     Golden_GodsunÖÆ×÷")(window.close)
 del /q ÉèÖÃ.ini >nul
 goto :config
 :3
@@ -240,7 +243,7 @@ title ¾¯¸æ£º×Ô¶¯¼ì²âÉèÖÃ²ÎÊý´íÎó£¬Çë¼ì²éÊÇ·ñÎª¿ª»ò¹Ø£¡
 @echo                ¾¯¸æ£º×Ô¶¯¼ì²âÉèÖÃ²ÎÊý´íÎó£¬Çë¼ì²éÊÇ·ñÎª¿ª»ò¹Ø£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
-mshta vbscript:msgbox("¾¯¸æ£º×Ô¶¯¼ì²âÉèÖÃ²ÎÊý´íÎó£¬Çë¼ì²éÊÇ·ñÎª¿ª»ò¹Ø£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.3     Golden_GodsunÖÆ×÷")(window.close)
+mshta vbscript:msgbox("¾¯¸æ£º×Ô¶¯¼ì²âÉèÖÃ²ÎÊý´íÎó£¬Çë¼ì²éÊÇ·ñÎª¿ª»ò¹Ø£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.4     Golden_GodsunÖÆ×÷")(window.close)
 goto :stop
 :4
 title ÌáÊ¾£ºÎ´¼ì²âµ½¿ª·þºËÐÄjar£¬Çë½«ºËÐÄ¸´ÖÆµ½´ËÈí¼þËùÔÚÄ¿Â¼£¡
@@ -250,7 +253,7 @@ title ÌáÊ¾£ºÎ´¼ì²âµ½¿ª·þºËÐÄjar£¬Çë½«ºËÐÄ¸´ÖÆµ½´ËÈí¼þËùÔÚÄ¿Â¼£¡
 @echo           ÌáÊ¾£ºÎ´¼ì²âµ½¿ª·þºËÐÄjar£¬Çë½«ºËÐÄ¸´ÖÆµ½´ËÈí¼þËùÔÚÄ¿Â¼£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
-mshta vbscript:msgbox("ÌáÊ¾£ºÎ´¼ì²âµ½¿ª·þºËÐÄjar£¬Çë½«ºËÐÄ¸´ÖÆµ½´ËÈí¼þËùÔÚÄ¿Â¼£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.3     Golden_GodsunÖÆ×÷")(window.close)
+mshta vbscript:msgbox("ÌáÊ¾£ºÎ´¼ì²âµ½¿ª·þºËÐÄjar£¬Çë½«ºËÐÄ¸´ÖÆµ½´ËÈí¼þËùÔÚÄ¿Â¼£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.4     Golden_GodsunÖÆ×÷")(window.close)
 goto :stop
 :5
 title ¾¯¸æ£º'%Core%'ºËÐÄÃû³Æ´íÎó£¬ÓÐ¿Õ¸ñµÄºËÐÄÃûÇëÔÚ'ÉèÖÃ.ini'ÖÐ½øÐÐÉèÖÃ£¡
@@ -260,7 +263,7 @@ title ¾¯¸æ£º'%Core%'ºËÐÄÃû³Æ´íÎó£¬ÓÐ¿Õ¸ñµÄºËÐÄÃûÇëÔÚ'ÉèÖÃ.ini'ÖÐ½øÐÐÉèÖÃ£¡
 @echo         ¾¯¸æ£º'%Core%'ºËÐÄÃû³Æ´íÎó£¬ÓÐ¿Õ¸ñµÄºËÐÄÃûÇëÔÚ'ÉèÖÃ.ini'ÖÐ½øÐÐÉèÖÃ£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
-mshta vbscript:msgbox("¾¯¸æ£º'%Core%'ºËÐÄÃû³Æ´íÎó£¬ÓÐ¿Õ¸ñµÄºËÐÄÃûÇëÔÚ'ÉèÖÃ.ini'ÖÐ½øÐÐÉèÖÃ£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.3     Golden_GodsunÖÆ×÷")(window.close)
+mshta vbscript:msgbox("¾¯¸æ£º'%Core%'ºËÐÄÃû³Æ´íÎó£¬ÓÐ¿Õ¸ñµÄºËÐÄÃûÇëÔÚ'ÉèÖÃ.ini'ÖÐ½øÐÐÉèÖÃ£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.4     Golden_GodsunÖÆ×÷")(window.close)
 goto :stop
 :6
 title ¾¯¸æ£ºÎ´¼ì²âµ½%Java%Â·¾¶ÏÂµÄJava£¬ÇëÔÚ'ÉèÖÃ.ini'ÖÐÖØÐÂÉèÖÃJavaÂ·¾¶£¡
@@ -270,7 +273,7 @@ title ¾¯¸æ£ºÎ´¼ì²âµ½%Java%Â·¾¶ÏÂµÄJava£¬ÇëÔÚ'ÉèÖÃ.ini'ÖÐÖØÐÂÉèÖÃJavaÂ·¾¶£¡
 @echo ¾¯¸æ£ºÎ´¼ì²âµ½%Java%Â·¾¶ÏÂµÄJava£¬ÇëÔÚ'ÉèÖÃ.ini'ÖÐÖØÐÂÉèÖÃJavaÂ·¾¶£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
-mshta vbscript:msgbox("¾¯¸æ£ºÎ´¼ì²âµ½%Java%Â·¾¶ÏÂµÄJava£¬ÇëÔÚ'ÉèÖÃ.ini'ÖÐÖØÐÂÉèÖÃJavaÂ·¾¶£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.3     Golden_GodsunÖÆ×÷")(window.close)
+mshta vbscript:msgbox("¾¯¸æ£ºÎ´¼ì²âµ½%Java%Â·¾¶ÏÂµÄJava£¬ÇëÔÚ'ÉèÖÃ.ini'ÖÐÖØÐÂÉèÖÃJavaÂ·¾¶£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.4     Golden_GodsunÖÆ×÷")(window.close)
 goto :stop
 :7
 title ÌáÊ¾£ºÉèÖÃµÄÖØÆô´ÎÊýÏÞÖÆÒÑ´ïµ½%ReLimits%´Î£¬ÒÑ×Ô¶¯¹Ø±Õ·þÎñÆ÷£¡
@@ -280,7 +283,7 @@ title ÌáÊ¾£ºÉèÖÃµÄÖØÆô´ÎÊýÏÞÖÆÒÑ´ïµ½%ReLimits%´Î£¬ÒÑ×Ô¶¯¹Ø±Õ·þÎñÆ÷£¡
 @echo               ÌáÊ¾£ºÉèÖÃµÄÖØÆô´ÎÊýÏÞÖÆÒÑ´ïµ½%ReLimits%´Î£¬ÒÑ×Ô¶¯¹Ø±Õ·þÎñÆ÷£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
-mshta vbscript:msgbox("ÌáÊ¾£ºÉèÖÃµÄÖØÆô´ÎÊýÏÞÖÆÒÑ´ïµ½%ReLimits%´Î£¬ÒÑ×Ô¶¯¹Ø±Õ·þÎñÆ÷£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.3     Golden_GodsunÖÆ×÷")(window.close)
+mshta vbscript:msgbox("ÌáÊ¾£ºÉèÖÃµÄÖØÆô´ÎÊýÏÞÖÆÒÑ´ïµ½%ReLimits%´Î£¬ÒÑ×Ô¶¯¹Ø±Õ·þÎñÆ÷£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.4     Golden_GodsunÖÆ×÷")(window.close)
 goto :stop
 :8
 title ¾¯¸æ£ºÄú¿ªÆôÁË×Ô¶¯±¸·Ý£¬µ«Î´ÉèÖÃ×Ô¶¯±¸·ÝµÄÂ·¾¶£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÖÐÉèÖÃÂ·¾¶£¡
@@ -290,7 +293,7 @@ title ¾¯¸æ£ºÄú¿ªÆôÁË×Ô¶¯±¸·Ý£¬µ«Î´ÉèÖÃ×Ô¶¯±¸·ÝµÄÂ·¾¶£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÖÐÉèÖÃÂ·¾¶
 @echo ¾¯¸æ£ºÄú¿ªÆôÁË×Ô¶¯±¸·Ý£¬µ«Î´ÉèÖÃ×Ô¶¯±¸·ÝµÄÂ·¾¶£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÖÐÉèÖÃÂ·¾¶£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
-mshta vbscript:msgbox("¾¯¸æ£ºÄú¿ªÆôÁË×Ô¶¯±¸·Ý£¬µ«Î´ÉèÖÃ×Ô¶¯±¸·ÝµÄÂ·¾¶£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÖÐÉèÖÃÂ·¾¶£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.3     Golden_GodsunÖÆ×÷")(window.close)
+mshta vbscript:msgbox("¾¯¸æ£ºÄú¿ªÆôÁË×Ô¶¯±¸·Ý£¬µ«Î´ÉèÖÃ×Ô¶¯±¸·ÝµÄÂ·¾¶£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÖÐÉèÖÃÂ·¾¶£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.4     Golden_GodsunÖÆ×÷")(window.close)
 goto :stop
 :9
 title ¾¯¸æ£ºÄúÉèÖÃµÄ±¸·ÝµÈ¼¶ÓÐ´íÎó£¬²»ÔÚ1-9µÄ·¶Î§ÖÐ£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÖÐÉèÖÃÂ·¾¶£¡
@@ -300,7 +303,7 @@ title ¾¯¸æ£ºÄúÉèÖÃµÄ±¸·ÝµÈ¼¶ÓÐ´íÎó£¬²»ÔÚ1-9µÄ·¶Î§ÖÐ£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÖÐÉèÖÃÂ·¾¶£
 @echo ¾¯¸æ£ºÄúÉèÖÃµÄ±¸·ÝµÈ¼¶ÓÐ´íÎó£¬²»ÔÚ1-9µÄ·¶Î§ÖÐ£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÖÐÉèÖÃÂ·¾¶£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
-mshta vbscript:msgbox("¾¯¸æ£ºÄúÉèÖÃµÄ±¸·ÝµÈ¼¶ÓÐ´íÎó£¬²»ÔÚ1-9µÄ·¶Î§ÖÐ£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÖÐÉèÖÃÂ·¾¶£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.3     Golden_GodsunÖÆ×÷")(window.close)
+mshta vbscript:msgbox("¾¯¸æ£ºÄúÉèÖÃµÄ±¸·ÝµÈ¼¶ÓÐ´íÎó£¬²»ÔÚ1-9µÄ·¶Î§ÖÐ£¬ÇëÇ°Íù'ÉèÖÃ.ini'ÖÐÉèÖÃÂ·¾¶£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.4     Golden_GodsunÖÆ×÷")(window.close)
 goto :stop
 :10
 title ¾¯¸æ£º¼ì²âµ½·þÎñÆ÷Æô¶¯Òì³££¬Çë¼ì²éÆô¶¯²ÎÊý£¬JavaÅäÖÃ»·¾³£¬»òÕß×ÉÑ¯ÆäËûÈË£¡
@@ -310,7 +313,7 @@ title ¾¯¸æ£º¼ì²âµ½·þÎñÆ÷Æô¶¯Òì³££¬Çë¼ì²éÆô¶¯²ÎÊý£¬JavaÅäÖÃ»·¾³£¬»òÕß×ÉÑ¯ÆäËûÈË£¡
 @echo              Çë¼ì²éÆô¶¯²ÎÊý£¬Java°æ±¾£¬JavaÅäÖÃ»·¾³£¬»òÕß×ÉÑ¯ÆäËûÈË£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
-mshta vbscript:msgbox("¾¯¸æ£º¼ì²âµ½·þÎñÆ÷Æô¶¯Òì³££¬ÒÑ×Ô¶¯Í£Ö¹·þÎñÆ÷£¡Çë¼ì²éÆô¶¯²ÎÊý£¬Java°æ±¾£¬JavaÅäÖÃ»·¾³£¬»òÕß×ÉÑ¯ÆäËûÈË£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.3     Golden_GodsunÖÆ×÷")(window.close)
+mshta vbscript:msgbox("¾¯¸æ£º¼ì²âµ½·þÎñÆ÷Æô¶¯Òì³££¬ÒÑ×Ô¶¯Í£Ö¹·þÎñÆ÷£¡Çë¼ì²éÆô¶¯²ÎÊý£¬Java°æ±¾£¬JavaÅäÖÃ»·¾³£¬»òÕß×ÉÑ¯ÆäËûÈË£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.4     Golden_GodsunÖÆ×÷")(window.close)
 goto :stop
 :11
 title ÌáÊ¾£ºDebugÄ£Ê½ÒÑ¿ªÆô£¡´ËÎªÎ¬ÐÞÊ±×¨ÓÃÑ¡Ïî£¬Èç¹ûÎó¿ªÆôÇëÇ°ÍùÉèÖÃÀï¹Ø±Õ£¡
@@ -319,7 +322,7 @@ title ÌáÊ¾£ºDebugÄ£Ê½ÒÑ¿ªÆô£¡´ËÎªÎ¬ÐÞÊ±×¨ÓÃÑ¡Ïî£¬Èç¹ûÎó¿ªÆôÇëÇ°ÍùÉèÖÃÀï¹Ø±Õ£¡
 @echo        ÌáÊ¾£ºDebugÄ£Ê½ÒÑ¿ªÆô£¡´ËÎªÎ¬ÐÞÊ±×¨ÓÃÑ¡Ïî£¬Èç¹ûÎó¿ªÆôÇëÇ°ÍùÉèÖÃÀï¹Ø±Õ£¡
 @echo.
 @echo -----------------------------------------------------------------------------------
-mshta vbscript:msgbox("ÌáÊ¾£ºDebugÄ£Ê½ÒÑ¿ªÆô£¡´ËÎªÎ¬ÐÞÊ±×¨ÓÃÑ¡Ïî£¬Èç¹ûÎó¿ªÆôÇëÇ°ÍùÉèÖÃÀï¹Ø±Õ£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.3     Golden_GodsunÖÆ×÷")(window.close)
+mshta vbscript:msgbox("ÌáÊ¾£ºDebugÄ£Ê½ÒÑ¿ªÆô£¡´ËÎªÎ¬ÐÞÊ±×¨ÓÃÑ¡Ïî£¬Èç¹ûÎó¿ªÆôÇëÇ°ÍùÉèÖÃÀï¹Ø±Õ£¡",vbSystemModal,"·þÎñÆ÷Æô¶¯Èí¼þv5.2.4     Golden_GodsunÖÆ×÷")(window.close)
 @echo on
 goto :debug
 :: Í£Ö¹ÐÅÏ¢¼°ÍË³ö
