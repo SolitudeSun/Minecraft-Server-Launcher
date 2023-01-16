@@ -1,37 +1,3 @@
-::[Bat To Exe Converter]
-::
-::fBE1pAF6MU+EWH3eyE85Jh5XXgWEKFc8+liZAil+FiK7J73S0Qj3eo7P5jFg32blDcE/o6oe02hMndlMLxRVbh2lawEgug4=
-::YAwzoRdxOk+EWAjk
-::fBw5plQjdCuDJFSN+kczOhpSWDgEwIY/7HSZESDHahpIJ6fVVuMrRAcGFjJj4mXqInlhjkirFp1mHQ/Licu39s9lIAY3pg4=
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRnk
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSjk=
-::cBs/ulQjdF25
-::ZR41oxFsdFKZSTk=
-::eBoioBt6dFKZSTk=
-::cRo6pxp7LAbNWATEpSI=
-::egkzugNsPRvcWATEpSI=
-::dAsiuh18IRvcCxnZtBNQ
-::cRYluBh/LU+EWAjk
-::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJlZkkaHErRXA==
-::ZQ05rAF9IBncCkqN+0xwdVtCGUrQcjja
-::ZQ05rAF9IAHYFVzEqQIdIRVRTxaDOn/6NbAO/u3pr8aGt0MeXOctGA==
-::eg0/rx1wNQPfEVWB+kM9LVsJDCiDKWW5DrAOpf6uobjJ8QMYTOdf
-::fBEirQZwNQPfEVWB+kM9LVsJDCmLMm65FLQa/KjI6viRp19deOMqdozT36bAJfgWig==
-::cRolqwZ3JBvQF1fEqQIdIRVRTxaDOn/6gEnxbQI6ahNPJ73S0Qj3/XYTug==
-::dhA7uBVwLU+EWHSN+kczOhpSWGQ=
-::YQ03rBFzNR3SWATEx008IQ9BSAGxKWXa
-::dhAmsQZ3MwfNWATE100gMQldSwyWfMlzRoYT5OHv+u6CkVgTFLBvKt2WiOTcc65Ty0noNaQk0XJOi4s+CQhdbASuakFU
-::ZQ0/vhVqMQ3MEVWAtB9wGxRYRRCXOG6JE7t8
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRmp/Uw1KwlVShDCupdXg1/dbREzahpIJ6fV0Rv3GA==
-::Zh4grVQjdCuDJFSN+kczOhpSWDgEwIY/7HSZESDHahpIJ6fVVuMrRAoVNjJm0GXgC3lhhVmoPLIXjp5CXlULMBeza28=
-::YB416Ek+Zm8=
-::
-::
-::978f952a14a936cc963da21a135fa983
 :: 启动信息及设定
 @echo off
 set ReTimes=0
