@@ -32,4 +32,4 @@
 ## 作者及特别感谢
 **作者 [_Golden_Godsun_](https://github.com/SolitudeSun)**
 
-**特别感谢 [_Dongfeifan_](https://github.com/dongffan)**
+**感谢 [_Dongfeifan_](https://github.com/dongffan)**
