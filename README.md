@@ -28,8 +28,3 @@
 ## 许可证
 [![License](https://img.shields.io/github/license/SolitudeSun/Minecraft-Server-Launcher?label=License&logo=github)](LICENSE)
 > _All patches are licensed under the MIT license, unless otherwise noted in the patch headers._
-
-## 作者及特别感谢
-**作者 [_Golden_Godsun_](https://github.com/SolitudeSun)**
-
-**感谢 [_Dongfeifan_](https://github.com/dongffan)**
